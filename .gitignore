@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Data & Large Files
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/rasters/*
+!data/rasters/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+reports/*.pdf
+
+# PostgreSQL Data Cluster (local only)
+database/pgsql/
+*.log
+
+# Node & Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp

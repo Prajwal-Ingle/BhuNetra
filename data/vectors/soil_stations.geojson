@@ -1,0 +1,179 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "location": "Hingna South Agro-Lab (Linga Series)",
+        "soil_type": "Deep Black Cotton Soil (Typic Haplusterts)",
+        "ph": 7.85,
+        "nitrogen": 192.5,
+        "phosphorus": 18.4,
+        "potassium": 345.0,
+        "organic_carbon": 0.58,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.932,
+          21.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "location": "Kalmeshwar Citrus Research (Kalmeshwar Series)",
+        "soil_type": "Medium Black Soil (Vertic Haplustepts)",
+        "ph": 8.1,
+        "nitrogen": 175.2,
+        "phosphorus": 22.8,
+        "potassium": 410.0,
+        "organic_carbon": 0.64,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.91,
+          21.215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "location": "Saoner Floodplain Station (Saoner Series)",
+        "soil_type": "Clay Loam Alluvial Soil (Fluventic Haplustepts)",
+        "ph": 7.35,
+        "nitrogen": 235.0,
+        "phosphorus": 31.5,
+        "potassium": 380.0,
+        "organic_carbon": 0.82,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.984,
+          21.385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "location": "Umred Plains Station (Nabira Series)",
+        "soil_type": "Shallow to Medium Black Soil (Lithic Ustorthents)",
+        "ph": 7.6,
+        "nitrogen": 168.0,
+        "phosphorus": 14.2,
+        "potassium": 290.0,
+        "organic_carbon": 0.49,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.285,
+          20.835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "location": "Katol Mandi Benchmark Site",
+        "soil_type": "Medium Black Calcareous Soil",
+        "ph": 8.2,
+        "nitrogen": 180.0,
+        "phosphorus": 19.5,
+        "potassium": 360.0,
+        "organic_carbon": 0.52,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.585,
+          21.265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "location": "Ramtek Foot-hills Testing Lab",
+        "soil_type": "Red Gravelly Loam (Typic Rhodustalfs)",
+        "ph": 6.7,
+        "nitrogen": 210.0,
+        "phosphorus": 26.0,
+        "potassium": 240.0,
+        "organic_carbon": 0.78,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.385,
+          21.455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "location": "Mouda Paddy Research Plot",
+        "soil_type": "Deep Clayey Vertisol",
+        "ph": 7.45,
+        "nitrogen": 245.0,
+        "phosphorus": 34.0,
+        "potassium": 395.0,
+        "organic_carbon": 0.85,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.355,
+          21.225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "location": "Bhiwapur Agro Station",
+        "soil_type": "Mixed Red and Black Soil",
+        "ph": 7.15,
+        "nitrogen": 188.0,
+        "phosphorus": 21.0,
+        "potassium": 310.0,
+        "organic_carbon": 0.61,
+        "sampled_date": "2026-09-20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.515,
+          20.765
+        ]
+      }
+    }
+  ]
+}

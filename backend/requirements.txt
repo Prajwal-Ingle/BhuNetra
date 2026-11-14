@@ -1,0 +1,38 @@
+# GeoAgri Intelligence - Backend Requirements
+# Optimized for Python 3.12 on Windows (8 GB RAM constraint)
+
+# Web API Framework
+fastapi>=0.110.0,<1.0.0
+uvicorn[standard]>=0.28.0,<1.0.0
+pydantic>=2.6.0,<3.0.0
+pydantic-settings>=2.2.0
+python-multipart>=0.0.9
+
+# Database & Spatial ORM
+SQLAlchemy>=2.0.28
+GeoAlchemy2>=0.14.4
+psycopg2-binary>=2.9.9
+alembic>=1.13.1
+
+# Geospatial & Remote Sensing
+shapely>=2.0.3
+pyproj>=3.6.1
+geopandas>=0.14.3
+rasterio>=1.3.9
+numpy>=1.26.4,<2.3.0
+pandas>=2.2.1
+
+# Machine Learning
+scikit-learn>=1.4.1
+scipy>=1.12.0
+joblib>=1.3.2
+
+# Utility, HTTP & Reporting
+requests>=2.31.0
+httpx>=0.27.0
+reportlab>=4.1.0
+matplotlib>=3.8.3
+
+# Testing & Quality
+pytest>=8.0.0
+pytest-asyncio>=0.23.5

@@ -1,0 +1,49 @@
+{
+  "model_version": "v1.0.0",
+  "accuracy": 0.99,
+  "report": {
+    "Low / No Drought Risk": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 25.0
+    },
+    "Mild Agricultural Drought": {
+      "precision": 0.9615384615384616,
+      "recall": 1.0,
+      "f1-score": 0.9803921568627451,
+      "support": 25.0
+    },
+    "Moderate Agricultural Drought": {
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1-score": 0.9795918367346939,
+      "support": 25.0
+    },
+    "Severe Agricultural Drought": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 25.0
+    },
+    "accuracy": 0.99,
+    "macro avg": {
+      "precision": 0.9903846153846154,
+      "recall": 0.99,
+      "f1-score": 0.9899959983993598,
+      "support": 100.0
+    },
+    "weighted avg": {
+      "precision": 0.9903846153846154,
+      "recall": 0.99,
+      "f1-score": 0.9899959983993597,
+      "support": 100.0
+    }
+  },
+  "feature_importance": {
+    "vci": 0.1907,
+    "tci": 0.1966,
+    "rainfall_ratio": 0.3983,
+    "soil_moisture_est": 0.2144
+  }
+}

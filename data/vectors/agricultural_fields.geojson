@@ -1,0 +1,791 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "field_name": "Hingna-Field-01",
+        "village_id": 2,
+        "area_hectares": 4.85,
+        "crop_type": "Soybean",
+        "soil_type": "Deep Black Cotton Soil",
+        "irrigation": "Rainfed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.93,
+              21.04
+            ],
+            [
+              78.935,
+              21.04
+            ],
+            [
+              78.936,
+              21.045
+            ],
+            [
+              78.931,
+              21.046
+            ],
+            [
+              78.93,
+              21.04
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "field_name": "Hingna-Field-02",
+        "village_id": 2,
+        "area_hectares": 3.72,
+        "crop_type": "Pigeonpea (Tur)",
+        "soil_type": "Medium Black Soil",
+        "irrigation": "Rainfed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.936,
+              21.041
+            ],
+            [
+              78.941,
+              21.042
+            ],
+            [
+              78.942,
+              21.047
+            ],
+            [
+              78.937,
+              21.046
+            ],
+            [
+              78.936,
+              21.041
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "field_name": "Hingna-Field-03",
+        "village_id": 2,
+        "area_hectares": 6.1,
+        "crop_type": "Wheat",
+        "soil_type": "Deep Black Soil",
+        "irrigation": "Canal-irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.945,
+              21.05
+            ],
+            [
+              78.952,
+              21.051
+            ],
+            [
+              78.953,
+              21.058
+            ],
+            [
+              78.946,
+              21.057
+            ],
+            [
+              78.945,
+              21.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "field_name": "Kalmeshwar-Orchard-01",
+        "village_id": 3,
+        "area_hectares": 8.25,
+        "crop_type": "Nagpur Mandarin (Orange)",
+        "soil_type": "Medium Black Soil",
+        "irrigation": "Drip-irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.905,
+              21.21
+            ],
+            [
+              78.914,
+              21.211
+            ],
+            [
+              78.915,
+              21.219
+            ],
+            [
+              78.906,
+              21.218
+            ],
+            [
+              78.905,
+              21.21
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "field_name": "Kalmeshwar-Orchard-02",
+        "village_id": 3,
+        "area_hectares": 5.4,
+        "crop_type": "Nagpur Mandarin (Orange)",
+        "soil_type": "Vertisol",
+        "irrigation": "Drip-irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.918,
+              21.222
+            ],
+            [
+              78.925,
+              21.223
+            ],
+            [
+              78.926,
+              21.23
+            ],
+            [
+              78.919,
+              21.229
+            ],
+            [
+              78.918,
+              21.222
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "field_name": "Katol-Citrus-01",
+        "village_id": 4,
+        "area_hectares": 12.5,
+        "crop_type": "Nagpur Mandarin (Orange)",
+        "soil_type": "Clay Loam Vertisol",
+        "irrigation": "Drip / Well"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.58,
+              21.26
+            ],
+            [
+              78.592,
+              21.261
+            ],
+            [
+              78.593,
+              21.272
+            ],
+            [
+              78.581,
+              21.271
+            ],
+            [
+              78.58,
+              21.26
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "field_name": "Katol-Cotton-02",
+        "village_id": 4,
+        "area_hectares": 7.8,
+        "crop_type": "Bt Cotton",
+        "soil_type": "Black Cotton Soil",
+        "irrigation": "Rainfed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.605,
+              21.24
+            ],
+            [
+              78.614,
+              21.241
+            ],
+            [
+              78.615,
+              21.249
+            ],
+            [
+              78.606,
+              21.248
+            ],
+            [
+              78.605,
+              21.24
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "field_name": "Narkhed-Orchard-01",
+        "village_id": 5,
+        "area_hectares": 10.2,
+        "crop_type": "Nagpur Mandarin (Orange)",
+        "soil_type": "Medium Black",
+        "irrigation": "Tube Well"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.48,
+              21.46
+            ],
+            [
+              78.491,
+              21.461
+            ],
+            [
+              78.492,
+              21.47
+            ],
+            [
+              78.481,
+              21.469
+            ],
+            [
+              78.48,
+              21.46
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "field_name": "Saoner-Cotton-01",
+        "village_id": 6,
+        "area_hectares": 7.6,
+        "crop_type": "Bt Cotton",
+        "soil_type": "Clay Loam Alluvial",
+        "irrigation": "River Lift Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.98,
+              21.38
+            ],
+            [
+              78.988,
+              21.381
+            ],
+            [
+              78.989,
+              21.389
+            ],
+            [
+              78.981,
+              21.388
+            ],
+            [
+              78.98,
+              21.38
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "field_name": "Saoner-Cane-02",
+        "village_id": 6,
+        "area_hectares": 9.15,
+        "crop_type": "Sugarcane",
+        "soil_type": "Alluvial Silt",
+        "irrigation": "Canal Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.995,
+              21.392
+            ],
+            [
+              79.005,
+              21.393
+            ],
+            [
+              79.006,
+              21.402
+            ],
+            [
+              78.996,
+              21.401
+            ],
+            [
+              78.995,
+              21.392
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "field_name": "Parseoni-Paddy-01",
+        "village_id": 7,
+        "area_hectares": 8.4,
+        "crop_type": "Paddy (Rice)",
+        "soil_type": "Clayey Inceptisol",
+        "irrigation": "Canal-irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.22,
+              21.41
+            ],
+            [
+              79.229,
+              21.411
+            ],
+            [
+              79.23,
+              21.42
+            ],
+            [
+              79.221,
+              21.419
+            ],
+            [
+              79.22,
+              21.41
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "field_name": "Ramtek-Paddy-01",
+        "village_id": 8,
+        "area_hectares": 11.2,
+        "crop_type": "Paddy (Rice)",
+        "soil_type": "Loamy Alluvial",
+        "irrigation": "Tank Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.38,
+              21.45
+            ],
+            [
+              79.392,
+              21.451
+            ],
+            [
+              79.393,
+              21.461
+            ],
+            [
+              79.381,
+              21.46
+            ],
+            [
+              79.38,
+              21.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "field_name": "Mouda-Paddy-01",
+        "village_id": 9,
+        "area_hectares": 14.5,
+        "crop_type": "Paddy (Rice)",
+        "soil_type": "Deep Vertisol",
+        "irrigation": "Pench Canal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.35,
+              21.22
+            ],
+            [
+              79.364,
+              21.221
+            ],
+            [
+              79.365,
+              21.233
+            ],
+            [
+              79.351,
+              21.232
+            ],
+            [
+              79.35,
+              21.22
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "field_name": "Mouda-Wheat-02",
+        "village_id": 9,
+        "area_hectares": 8.7,
+        "crop_type": "Wheat",
+        "soil_type": "Black Cotton Soil",
+        "irrigation": "Canal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.375,
+              21.205
+            ],
+            [
+              79.385,
+              21.206
+            ],
+            [
+              79.386,
+              21.215
+            ],
+            [
+              79.376,
+              21.214
+            ],
+            [
+              79.375,
+              21.205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "field_name": "Kamptee-Vegetable-01",
+        "village_id": 10,
+        "area_hectares": 5.2,
+        "crop_type": "Vegetables / Chilli",
+        "soil_type": "Riverine Loam",
+        "irrigation": "Borewell"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.2,
+              21.23
+            ],
+            [
+              79.207,
+              21.231
+            ],
+            [
+              79.208,
+              21.238
+            ],
+            [
+              79.201,
+              21.237
+            ],
+            [
+              79.2,
+              21.23
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "field_name": "Umred-Soybean-01",
+        "village_id": 11,
+        "area_hectares": 11.3,
+        "crop_type": "Soybean",
+        "soil_type": "Shallow to Medium Black",
+        "irrigation": "Rainfed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.28,
+              20.83
+            ],
+            [
+              79.292,
+              20.831
+            ],
+            [
+              79.293,
+              20.841
+            ],
+            [
+              79.281,
+              20.84
+            ],
+            [
+              79.28,
+              20.83
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "field_name": "Umred-Gram-02",
+        "village_id": 11,
+        "area_hectares": 7.4,
+        "crop_type": "Gram (Chickpea)",
+        "soil_type": "Medium Black",
+        "irrigation": "Protective Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.31,
+              20.85
+            ],
+            [
+              79.319,
+              20.851
+            ],
+            [
+              79.32,
+              20.859
+            ],
+            [
+              79.311,
+              20.858
+            ],
+            [
+              79.31,
+              20.85
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "field_name": "Kuhi-Paddy-01",
+        "village_id": 12,
+        "area_hectares": 13.1,
+        "crop_type": "Paddy (Rice)",
+        "soil_type": "Clayey Black",
+        "irrigation": "Surface Tank"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.41,
+              20.98
+            ],
+            [
+              79.423,
+              20.981
+            ],
+            [
+              79.424,
+              20.993
+            ],
+            [
+              79.411,
+              20.992
+            ],
+            [
+              79.41,
+              20.98
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "field_name": "Bhiwapur-Chilli-01",
+        "village_id": 13,
+        "area_hectares": 6.8,
+        "crop_type": "Bhiwapur Red Chilli",
+        "soil_type": "Red & Black Mixed",
+        "irrigation": "Well Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.51,
+              20.76
+            ],
+            [
+              79.518,
+              20.761
+            ],
+            [
+              79.519,
+              20.769
+            ],
+            [
+              79.511,
+              20.768
+            ],
+            [
+              79.51,
+              20.76
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "field_name": "NagpurRural-Hort-01",
+        "village_id": 1,
+        "area_hectares": 6.5,
+        "crop_type": "Floriculture & Guava",
+        "soil_type": "Medium Black",
+        "irrigation": "Drip Irrigated"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.05,
+              21.15
+            ],
+            [
+              79.058,
+              21.151
+            ],
+            [
+              79.059,
+              21.159
+            ],
+            [
+              79.051,
+              21.158
+            ],
+            [
+              79.05,
+              21.15
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

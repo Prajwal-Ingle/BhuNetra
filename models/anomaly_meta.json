@@ -1,0 +1,12 @@
+{
+  "model_version": "v1.0.0",
+  "algorithm": "IsolationForest(contamination=0.08, n_estimators=100)",
+  "features": [
+    "current_ndvi",
+    "ndvi_delta",
+    "current_ndwi"
+  ],
+  "training_samples": 500,
+  "baseline_mean_ndvi": 0.621,
+  "baseline_std_ndvi": 0.116
+}
