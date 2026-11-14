@@ -70,10 +70,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
             className="flex items-center space-x-3 cursor-pointer group min-w-0"
             title="BhuNetra Overview"
           >
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#2d60ff] to-[#ff6f61] p-0.5 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform shrink-0">
-              <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
-                <Eye className="w-5 h-5 text-[#ff6f61]" />
-              </div>
+            <div className="w-10 h-10 rounded-2xl bg-[#101322] flex items-center justify-center p-1.5 shadow-sm group-hover:scale-105 transition-transform shrink-0 border border-[#232946]">
+              <img src="/logo.png" alt="BhuNetra Logo" className="w-full h-full object-contain" />
             </div>
             {!collapsed && (
               <div className="min-w-0 overflow-hidden">

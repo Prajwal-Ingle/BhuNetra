@@ -81,10 +81,23 @@ if os.path.exists(dist_dir):
         from fastapi.responses import FileResponse
         return FileResponse(os.path.join(dist_dir, "favicon.svg"), media_type="image/svg+xml")
 
+    @app.get("/favicon.png")
+    def serve_favicon_png():
+        from fastapi.responses import FileResponse
+        return FileResponse(os.path.join(dist_dir, "favicon.png"), media_type="image/png")
+
     @app.get("/favicon.ico")
     def serve_favicon_ico():
         from fastapi.responses import FileResponse
+        ico_path = os.path.join(dist_dir, "favicon.ico")
+        if os.path.exists(ico_path):
+            return FileResponse(ico_path, media_type="image/x-icon")
         return FileResponse(os.path.join(dist_dir, "favicon.svg"), media_type="image/svg+xml")
+
+    @app.get("/logo.png")
+    def serve_logo_png():
+        from fastapi.responses import FileResponse
+        return FileResponse(os.path.join(dist_dir, "logo.png"), media_type="image/png")
 
     @app.get("/")
     def serve_frontend_root():
