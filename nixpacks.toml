@@ -1,0 +1,11 @@
+[phases.setup]
+aptPkgs = ["...", "libexpat1", "libexpat1-dev", "libgomp1", "libpq5"]
+
+[phases.build]
+cmds = [
+    "cd frontend && npm install && npm run build",
+    "mkdir -p /app/reports /app/data/rasters /app/data/exports"
+]
+
+[start]
+cmd = "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8000}"

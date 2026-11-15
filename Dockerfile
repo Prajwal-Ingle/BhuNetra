@@ -23,14 +23,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     ca-certificates \
     libexpat1 \
+    libexpat1-dev \
     libgomp1 \
     libpq5 \
+    && ldconfig \
     && rm -rf /var/lib/apt/lists/*
+
+# Symlink libexpat to ensure linker finds it in standard paths
+RUN ln -sf /usr/lib/x86_64-linux-gnu/libexpat.so* /usr/lib/ 2>/dev/null || true && \
+    ln -sf /lib/x86_64-linux-gnu/libexpat.so* /lib/ 2>/dev/null || true && \
+    ldconfig
 
 # Install Python requirements
 COPY backend/requirements.txt ./backend/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r ./backend/requirements.txt
+
+# Verify rasterio import during Docker build
+RUN python -c "import rasterio; print('Rasterio successfully loaded:', rasterio.__version__)"
 
 # Copy backend application, data, models, and scripts
 COPY backend/ ./backend/
@@ -48,6 +58,7 @@ RUN mkdir -p /app/reports /app/data/rasters /app/data/exports
 ENV PYTHONPATH="/app:/app/backend"
 ENV PORT=8000
 ENV PYTHONUNBUFFERED=1
+ENV LD_LIBRARY_PATH="/usr/lib:/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:${LD_LIBRARY_PATH}"
 
 EXPOSE 8000
 
