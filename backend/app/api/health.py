@@ -10,6 +10,7 @@ from backend.app.database.session import get_db
 router = APIRouter(prefix="/health", tags=["Health"])
 
 @router.get("/")
+@router.get("")
 def health_check(db: Session = Depends(get_db)):
     """Verifies backend API, PostgreSQL database, and PostGIS extension status."""
     try:

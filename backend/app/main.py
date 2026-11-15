@@ -103,6 +103,14 @@ if os.path.exists(dist_dir):
     def serve_frontend_root():
         from fastapi.responses import FileResponse
         return FileResponse(os.path.join(dist_dir, "index.html"))
+
+    @app.get("/{full_path:path}")
+    def serve_frontend_spa(full_path: str):
+        from fastapi.responses import FileResponse
+        file_path = os.path.join(dist_dir, full_path)
+        if full_path and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        return FileResponse(os.path.join(dist_dir, "index.html"))
 else:
     @app.get("/")
     def root():
@@ -116,4 +124,5 @@ else:
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.app.main:app", host="0.0.0.0", port=8000, reload=True)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("backend.app.main:app", host="0.0.0.0", port=port, reload=True)
