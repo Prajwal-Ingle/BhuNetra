@@ -17,6 +17,14 @@ data/exports/*
 !data/exports/.gitkeep
 reports/*.pdf
 
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
 # PostgreSQL Data Cluster (local only)
 database/pgsql/
 *.log
