@@ -402,7 +402,7 @@ export const ReportsPage: React.FC = () => {
                       <span>{rpt.filename}</span>
                     </td>
                     <td className="py-3 px-4 text-[#4b5563]">
-                      {(rpt.size_bytes / 1024).toFixed(1)} KB
+                      {rpt.size_bytes != null ? `${(rpt.size_bytes / 1024).toFixed(1)} KB` : 'N/A'}
                     </td>
                     <td className="py-3 px-4 text-[#6b7280] font-sans text-[11px]">
                       {new Date(rpt.created_at).toLocaleString()}

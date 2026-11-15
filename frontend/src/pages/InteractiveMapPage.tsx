@@ -360,11 +360,11 @@ export const InteractiveMapPage: React.FC = () => {
                   </div>
                 )}
 
-                {selectedFeature.properties.nearest_water_distance_m !== undefined && (
+                {selectedFeature.properties.nearest_water_distance_m != null && (
                   <div className="flex justify-between text-[#4b5563]">
                     <span className="text-[#6b7280]">Nearest Water:</span>
                     <span className="font-mono font-medium text-hydro-400">
-                      {selectedFeature.properties.nearest_water_distance_m.toFixed(0)} m
+                      {Number(selectedFeature.properties.nearest_water_distance_m).toFixed(0)} m
                     </span>
                   </div>
                 )}

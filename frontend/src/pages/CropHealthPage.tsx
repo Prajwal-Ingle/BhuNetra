@@ -190,25 +190,31 @@ export const CropHealthPage: React.FC = () => {
                 <div className="text-[11px] uppercase tracking-wider text-[#6b7280] font-medium">Hydrographic Proximity</div>
                 <div className="flex justify-between text-[#4b5563]">
                   <span className="text-[#6b7280]">Water Feature:</span>
-                  <span className="text-[#111827] font-medium">{selectedField.nearest_water_source}</span>
+                  <span className="text-[#111827] font-medium">
+                    {selectedField.nearest_water?.source_name || selectedField.nearest_water_source || 'Canal / Stream'}
+                  </span>
                 </div>
                 <div className="flex justify-between text-[#4b5563]">
                   <span className="text-[#6b7280]">Geodetic Distance:</span>
-                  <span className="font-mono text-hydro-400 font-medium">{selectedField.nearest_water_distance_m.toFixed(0)} meters</span>
+                  <span className="font-mono text-hydro-400 font-medium">
+                    {(selectedField.nearest_water?.distance_meters ?? selectedField.nearest_water_distance_m) != null
+                      ? `${Number(selectedField.nearest_water?.distance_meters ?? selectedField.nearest_water_distance_m).toFixed(0)} meters`
+                      : 'Calculated in GIS'}
+                  </span>
                 </div>
               </div>
 
               {/* Multi-temporal Observations for this Parcel */}
               <div className="space-y-2">
                 <div className="text-[11px] uppercase tracking-wider text-[#6b7280] font-medium">Observation History</div>
-                {selectedField.observations && selectedField.observations.length > 0 ? (
+                {((selectedField.vegetation_history || selectedField.observations) && (selectedField.vegetation_history || selectedField.observations).length > 0) ? (
                   <div className="space-y-1.5">
-                    {selectedField.observations.map((obs: any, idx: number) => (
+                    {(selectedField.vegetation_history || selectedField.observations).map((obs: any, idx: number) => (
                       <div key={idx} className="bg-[#edece8] p-2.5 rounded-md border border-[#e2dfd7] flex items-center justify-between text-[11px]">
-                        <span className="font-mono text-[#4b5563]">{obs.date}</span>
+                        <span className="font-mono text-[#4b5563]">{obs.date || obs.analysis_date || 'Observation'}</span>
                         <div className="flex items-center space-x-3 font-mono">
-                          <span className="text-agri-400 font-medium">NDVI {obs.ndvi.toFixed(3)}</span>
-                          <span className="text-hydro-400 font-medium">NDWI {obs.ndwi.toFixed(3)}</span>
+                          <span className="text-agri-400 font-medium">NDVI {obs.ndvi != null ? Number(obs.ndvi).toFixed(3) : 'N/A'}</span>
+                          <span className="text-hydro-400 font-medium">NDWI {obs.ndwi != null ? Number(obs.ndwi).toFixed(3) : 'N/A'}</span>
                         </div>
                       </div>
                     ))}

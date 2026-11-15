@@ -85,6 +85,7 @@ export const AiPredictionsPage: React.FC = () => {
         vci: Number(drVci),
         tci: Number(drTci),
         rainfall_ratio: Number(drRainRatio),
+        soil_moisture_est: Number(drSoilMoist),
         soil_moisture_estimate: Number(drSoilMoist)
       });
       setDrResult(res);

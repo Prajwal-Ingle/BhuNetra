@@ -232,6 +232,9 @@ def get_field_detail(field_id: int, db: Session = Depends(get_db)):
         "district_name": r.district_name,
         "area_hectares": float(r.area_hectares),
         "geometry": json.loads(r.geojson),
+        "nearest_water_source": r.nearest_water_source,
+        "nearest_water_type": r.nearest_water_type,
+        "nearest_water_distance_m": float(r.nearest_water_distance_m) if r.nearest_water_distance_m is not None else None,
         "nearest_water": {
             "source_name": r.nearest_water_source,
             "source_type": r.nearest_water_type,
@@ -243,5 +246,6 @@ def get_field_detail(field_id: int, db: Session = Depends(get_db)):
             "nitrogen_kgha": float(r.soil_nitrogen) if r.soil_nitrogen is not None else None,
             "organic_carbon_pct": float(r.soil_organic_carbon) if r.soil_organic_carbon is not None else None
         },
-        "vegetation_history": history
+        "vegetation_history": history,
+        "observations": history
     }

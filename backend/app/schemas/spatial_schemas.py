@@ -3,7 +3,7 @@ GeoAgri Intelligence - Pydantic Request & Response Schemas
 Provides strict validation, pagination, GeoJSON serialization, and analytical schemas.
 """
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 from typing import Optional, List, Dict, Any, Union
 from datetime import date, datetime
 
@@ -166,7 +166,17 @@ class DroughtRiskInferenceInput(BaseModel):
     vci: float = Field(..., ge=0.0, le=100.0)
     tci: float = Field(..., ge=0.0, le=100.0)
     rainfall_ratio: float = Field(..., ge=0.0)
-    soil_moisture_est: float = Field(..., ge=0.0, le=1.0)
+    soil_moisture_est: Optional[float] = Field(default=None, ge=0.0, le=1.0)
+    soil_moisture_estimate: Optional[float] = Field(default=None, ge=0.0, le=1.0)
+
+    @model_validator(mode="after")
+    def validate_soil_moisture(self):
+        if self.soil_moisture_est is None:
+            if self.soil_moisture_estimate is not None:
+                self.soil_moisture_est = self.soil_moisture_estimate
+            else:
+                self.soil_moisture_est = 0.20
+        return self
 
 class AnomalyInferenceInput(BaseModel):
     current_ndvi: float = Field(..., ge=-1.0, le=1.0)
