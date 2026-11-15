@@ -18,9 +18,12 @@ RUN npm run build
 FROM python:3.12-slim AS runner
 WORKDIR /app
 
-# Install minimal system dependencies
+# Install system dependencies for geospatial libraries & runtime
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
+    ca-certificates \
+    libexpat1 \
+    libgomp1 \
     libpq5 \
     && rm -rf /var/lib/apt/lists/*
 
